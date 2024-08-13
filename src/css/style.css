@@ -79,17 +79,29 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-family: Poppins;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1px;
+    text-align: left;
 }
 
-.me {
+.title_foto {
     position: absolute;
     width: 349px;
     height: 349px;
     left: 855px;
     top: 19px;
     border-radius: 230px;
-    border-width: 9px;
-    border-style: solid;
-    border-image: linear-gradient(to bottom, rgb(231, 15, 170)d, rgb(0, 192, 253)) 1 100%;
+    background: linear-gradient(to bottom right, rgb(231, 15, 170), rgb(0, 192, 253));
 }
 
+.me_foto {
+    position: absolute;
+    width: 331px;
+    height: 331px;
+    left: 9px;
+    top: 9px;
+    border-radius: 230px;
+}
