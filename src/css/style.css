@@ -18,6 +18,17 @@ body {
     justify-content: space-around;
 }
 
+.navigation_menu {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+
+.navigation_text {
+    display: flex;
+    gap: 50px;
+}
+
 .navigation_text_stile {
     color: rgb(102, 102, 102);
     font-family: DM Sans;
@@ -27,6 +38,40 @@ body {
     letter-spacing: 0px;
     text-align: center;
     text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .navigation_bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation_menu {
+        display: flex;
+        gap: 3px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .navigation_text {
+        display: flex;
+        gap: 4px;
+    }
+
+    .navigation_text_stile {
+        color: rgb(102, 102, 102);
+        font-family: DM Sans;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation_image{
+        display: flex;
+        gap: 25px;
+    }
 }
 
 /*.navigation {
