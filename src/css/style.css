@@ -348,51 +348,57 @@ body {
         gap: 100px;
     }
 
+    .projects_title {
+        font-size: 35px;
+        left: 20%;
+        top: 1500px;
+    }
+
+    .projects_text {
+        font-size: 35px;
+        left: 15%;
+        top: 1570px;
+    }
+
+    .projects_container {
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        top: 1676px;
+        flex-direction: column;
+        left: 10%;
+        gap: 50px;
+    }
+
+    .projects_container_lots {
+        width: 673px;
+        height: 867px;
+    }
+
+    .lots_img {
+        width: 673px;
+        height: 560px;
+    }
+
+    .lots_title {
+        top: 582px;
+    }
+
+    .lots_text {
+        top: 589px;
+    }
+
+    .lots_tech {
+        top: 600px;
+    }
+
+    .lots_grope {
+        top: 620px;
+    }
+
+    .lots_git {
+        top: 620px;
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 992px) {
-    .section {
-        gap: 16px;
-    }
-
-    .card {
-        height: 440px;
-    }
-
-    .card__text {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 768px) {
-    .card {
-        height: 400px;
-    }
-
-    .card__text {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 576px) {
-    .card__text {
-        font-size: 16px;
-    }
 }
