@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -289,4 +290,10 @@ body {
     height: 26px;
     left: 70px;
     top: 335px;
+}
+
+@media (max-width: 1300px) {
+    section body {
+        max-width: 50%;
+    }
 }
