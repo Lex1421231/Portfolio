@@ -292,7 +292,7 @@ body {
     top: 335px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 600px) {
     section body {
         max-width: 50%;
         width: 50%;
