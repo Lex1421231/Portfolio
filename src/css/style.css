@@ -295,5 +295,7 @@ body {
 @media (max-width: 1300px) {
     section body {
         max-width: 50%;
+        width: 50%;
+        flex-direction: column;
     }
 }
