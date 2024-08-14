@@ -292,14 +292,19 @@ body {
     top: 335px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+    body {
+        width: 1000px;
+        height: 800px;
+    }
+
     .navigation {
-        width: 1100px;
+        width: 1000px;
         left: 10px;
     }
 
     .navigation_text {
-        width: 1100px;
+        width: 1000px;
         left: 200px;
     }
 
@@ -330,232 +335,15 @@ body {
 
     .content_title {
         font-size: 35px;
-        left: 20%;
         top: 600px;
+        left: 40%;
+
     }
 
     .content_text {
         font-size: 35px;
-        left: 5%;
         top: 670px;
-    }
-
-    .content_icon {
-        width: 800px;
-        height: 318px;
-        left: 84px;
-        top: 800px;
-        gap: 100px;
-    }
-
-    .projects_title {
-        font-size: 35px;
-        left: 20%;
-        top: 1500px;
-    }
-
-    .projects_text {
-        font-size: 35px;
         left: 15%;
-        top: 1570px;
-    }
-
-    .projects_container {
-        display: flex;
-        position: relative;
-        justify-content: space-evenly;
-        top: 1676px;
-        flex-direction: column;
-        left: 10%;
-        gap: 50px;
-    }
-
-    .projects_container_lots {
-        width: 673px;
-        height: 867px;
-    }
-
-    .lots_img {
-        width: 673px;
-        height: 560px;
-    }
-
-    .lots_title {
-        top: 582px;
-    }
-
-    .lots_text {
-        top: 589px;
-    }
-
-    .lots_tech {
-        top: 600px;
-    }
-
-    .lots_grope {
-        top: 620px;
-    }
-
-    .lots_git {
-        top: 620px;
-    }
-}
-
-@media (max-width: 600px) {
-    .navigation {
-        width: 1100px;
-        left: 10px;
-    }
-
-    .navigation_text {
-        width: 1100px;
-        left: 200px;
-    }
-
-    .logo_navigation {
-        width: 50px;
-        height: 50px;
-        left: 20px;
-    }
-
-    .navigation_image {
-        left: 800px;
-    }
-
-    .title_text {
-        width: 1100px;
-        font-size: 35px;
-        left: -100px;
-        top: -100px;
-        line-height: 40px;
-    }
-
-    .title_foto {
-        width: 349px;
-        height: 349px;
-        left: 400px;
-        top: -120px;
-    }
-
-    .content_title {
-        font-size: 35px;
-        left: 20%;
-        top: 600px;
-    }
-
-    .content_text {
-        font-size: 35px;
-        left: 5%;
-        top: 670px;
-    }
-
-    .content_icon {
-        width: 800px;
-        height: 318px;
-        left: 84px;
-        top: 800px;
-        gap: 100px;
-    }
-
-    .projects_title {
-        font-size: 35px;
-        left: 20%;
-        top: 1500px;
-    }
-
-    .projects_text {
-        font-size: 35px;
-        left: 15%;
-        top: 1570px;
-    }
-
-    .projects_container {
-        display: flex;
-        position: relative;
-        justify-content: space-evenly;
-        top: 1676px;
-        flex-direction: column;
-        left: 10%;
-        gap: 50px;
-    }
-
-    .projects_container_lots {
-        width: 673px;
-        height: 867px;
-    }
-
-    .lots_img {
-        width: 673px;
-        height: 560px;
-    }
-
-    .lots_title {
-        top: 582px;
-    }
-
-    .lots_text {
-        top: 589px;
-    }
-
-    .lots_tech {
-        top: 600px;
-    }
-
-    .lots_grope {
-        top: 620px;
-    }
-
-    .lots_git {
-        top: 620px;
-    }
-}
-
-@media (max-width: 460px) {
-    .navigation {
-        width: 1100px;
-        left: 10px;
-    }
-
-    .navigation_text {
-        width: 1100px;
-        left: 200px;
-    }
-
-    .logo_navigation {
-        width: 50px;
-        height: 50px;
-        left: 20px;
-    }
-
-    .navigation_image {
-        left: 800px;
-    }
-
-    .title_text {
-        width: 1100px;
-        font-size: 35px;
-        left: -100px;
-        top: -100px;
-        line-height: 40px;
-    }
-
-    .title_foto {
-        width: 349px;
-        height: 349px;
-        left: 400px;
-        top: -120px;
-    }
-
-    .content_title {
-        font-size: 35px;
-        left: 20%;
-        top: 600px;
-    }
-
-    .content_text {
-        font-size: 35px;
-        left: 5%;
-        top: 670px;
     }
 
     .content_icon {
