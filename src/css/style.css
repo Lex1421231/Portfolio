@@ -13,7 +13,7 @@ body {
 
 .navigation {
     position: absolute;
-    width: 1193px;
+    
     height: 59px;
     left: 177px;
     right: 230px;
@@ -64,7 +64,7 @@ body {
 
 .title {
     position: absolute;
-    width: 1204px;
+   
     height: 350px;
     left: 177px;
     top: 320px;
@@ -410,12 +410,12 @@ body {
 
 @media (max-width: 500px) {
     body {
-        width: 100px;
+        width: 400px;
         height: 800px;
     }
 
     .navigation {
-        width: 500px;
+        width: 400px;
         left: 5px;
         font-size: 1px;
     }
@@ -423,7 +423,7 @@ body {
     .navigation_text {
         display: flex;
         position: absolute;
-        width: 600px;
+        width: 400px;
         height: 26px;
         left: 50px;
         right: 4px;
@@ -455,7 +455,7 @@ body {
     }
 
     .title_text {
-        width: 500px;
+        width: 400px;
         font-size: 15px;
         left: -120px;
         top: -200px;
@@ -513,13 +513,13 @@ body {
 
     .projects_title {
         font-size: 15px;
-        left: 180%;
+        left: 40%;
         top: 450px;
     }
 
     .projects_text {
         font-size: 15px;
-        left: 130%;
+        left: 30%;
         top: 470px;
     }
 
@@ -534,12 +534,12 @@ body {
     }
 
     .projects_container_lots {
-        width: 400px;
-        height: 767px;
+        width: 350px;
+        height: 667px;
     }
 
     .lots_img {
-        width: 400px;
+        width: 350px;
         height: 360px;
     }
 
@@ -556,10 +556,10 @@ body {
     }
 
     .lots_grope {
-        top: 520px;
+        top: 420px;
     }
 
     .lots_git {
-        top: 520px;
+        top: 420px;
     }
 }
