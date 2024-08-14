@@ -114,8 +114,6 @@ body {
     border-radius: 230px;
 }
 
-.content {}
-
 .content_title {
     position: absolute;
     width: 355px;
@@ -170,4 +168,125 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.projects_title {
+    position: absolute;
+    width: 201px;
+    height: 26px;
+    left: 676px;
+    top: 1776px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(66, 68, 110);
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.projects_text {
+    position: absolute;
+    width: 343px;
+    height: 26px;
+    left: 602px;
+    top: 1851px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(102, 102, 102);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.projects_container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    top: 1976px;
+}
+
+.projects_container_lots {
+    width: 373px;
+    height: 567px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+    background: rgb(255, 255, 255);
+}
+
+.lots_img {
+    position: absolute;
+    width: 373px;
+    height: 260px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.lots_title {
+    position: relative;
+    width: 300px;
+    height: 26px;
+    left: 28px;
+    top: 282px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.lots_text {
+    position: relative;
+    width: 314px;
+    height: 130px;
+    left: 28px;
+    top: 302px;
+    color: rgb(102, 102, 102);
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.lots_tech {
+    position: relative;
+    width: 314px;
+    height: 26px;
+    left: 28px;
+    top: 320px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.lots_grope {
+    position: relative;
+    width: 314px;
+    height: 26px;
+    left: 28px;
+    top: 335px;
+}
+
+.lots_git {
+    position: relative;
+    width: 314px;
+    height: 26px;
+    left: 70px;
+    top: 335px;
 }
