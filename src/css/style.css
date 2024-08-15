@@ -17,7 +17,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-
+    margin-top: 30px;
 }
 
 .nav__item {
@@ -62,12 +62,17 @@ body {
     }
 
     .nav__link__text {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .nav__img {
         display: flex;
+        margin-top: 18px;
         gap: 30px;
+    }
+
+    .nav__logo {
+        display: none;
     }
 }
 
@@ -217,49 +222,37 @@ body {
     }
 }
 
-
-/*
-
-
-.projects_title {
-    width: 201px;
-    height: 26px;
-    left: 676px;
-    top: 1776px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.container__title {
+    margin-top: 142px;
     color: rgb(66, 68, 110);
     font-family: Poppins;
     font-size: 48px;
     font-weight: 700;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: center;
 }
 
-.projects_text {
-    width: 343px;
-    height: 26px;
-    left: 602px;
-    top: 1851px;
+.container__text {
+    margin-top: 49px;
     color: rgb(102, 102, 102);
     font-family: Poppins;
     font-size: 32px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: center;
 }
 
-.projects_container {
-    display: flex;
-    position: relative;
+.container__list {
+    display: grid;
+    margin-top: 96px;
+    grid-template-columns: repeat(3, 567px);
+    grid-template-rows: repeat(1, 373px);
+    justify-items: center;
     justify-content: space-evenly;
-    top: 1976px;
+    row-gap: 47px;
 }
 
-.projects_container_lots {
+.container__item {
     width: 373px;
     height: 567px;
     border-radius: 20px;
@@ -267,73 +260,183 @@ body {
     background: rgb(255, 255, 255);
 }
 
-.lots_img {
+.item_img {
     width: 373px;
     height: 260px;
     border-radius: 20px 20px 0px 0px;
 }
 
-.lots_title {
-    position: relative;
-    width: 300px;
-    height: 26px;
-    left: 28px;
-    top: 282px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.container__item__title {
+    margin-top: 27px;
     color: rgb(0, 0, 0);
     font-family: Poppins;
     font-size: 28px;
     font-weight: 500;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: center;
 }
 
-.lots_text {
-    position: relative;
-    width: 314px;
-    height: 130px;
-    left: 28px;
-    top: 302px;
+.container__item__text {
+    margin-top: 17px;
+    margin-left: 18px;
     color: rgb(102, 102, 102);
     font-family: Poppins;
     font-size: 18px;
     font-weight: 300;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: left;
 }
 
-.lots_tech {
-    position: relative;
-    width: 314px;
-    height: 26px;
-    left: 28px;
-    top: 320px;
+.item_subtitle {
+    margin-top: 12px;
+    margin-left: 18px;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 300;
     line-height: 26px;
-    letter-spacing: 0px;
     text-align: left;
 }
 
-.lots_grope {
+.item_grope {
     position: relative;
-    width: 314px;
-    height: 26px;
-    left: 28px;
-    top: 335px;
+    top: 21px;
+    margin-left: 18px;
 }
 
-.lots_git {
+.item_git {
     position: relative;
-    width: 314px;
-    height: 26px;
-    left: 70px;
-    top: 335px;
+    top: 21px;
+    margin-left: 60px;
 }
 
-*/
+@media (max-width: 640px) {
+    .container__title {
+        margin-top: 140px;
+        font-size: 28px;
+    }
+
+    .container__text {
+        margin-top: 29px;
+        font-size: 20px;
+    }
+
+    .container__list {
+        grid-template-columns: repeat(1, 567px);
+        grid-template-rows: repeat(3, 373px);
+        justify-items: center;
+        justify-content: space-evenly;
+        row-gap: 247px;
+    }
+
+    .container__item {
+        width: 373px;
+        height: 567px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+        background: rgb(255, 255, 255);
+    }
+
+}
+
+.container__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 300px;
+}
+
+.container__contacts__list {
+    display: flex;
+    gap: 50px;
+}
+
+.container__link {
+    display: flex;
+    align-items: center;
+    gap: 51px;
+}
+
+.container__contacts__item {
+    color: rgb(102, 102, 102);
+    font-family: DM Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 640px) {
+    .container__contacts {
+        display: flex;
+        margin-top: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__contacts__list {
+        display: flex;
+        margin-top: 15px;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__link {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .container__contacts__img {
+        display: flex;
+        margin-top: 18px;
+        gap: 30px;
+    }
+
+    .container__logo {
+        display: none;
+    }
+
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    margin-bottom: 60px;
+}
+
+.create__line {
+    width: 1209px;
+    border: 2px solid rgb(102, 102, 102);
+    opacity: 0.3;
+}
+
+@media (max-width: 640px) {
+    .divider {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .create__line {
+        width: 500px;
+    }
+}
+
+.list__link {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 640px) {
+    .list__link {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+}
