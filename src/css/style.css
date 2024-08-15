@@ -42,40 +42,6 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 640px) {
-    .nav__list {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav__item {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .nav__link {
-        display: flex;
-        gap: 35px;
-        flex-direction: column;
-    }
-
-    .nav__link__text {
-        font-size: 40px;
-    }
-
-    .nav__img {
-        display: flex;
-        margin-top: 18px;
-        gap: 30px;
-    }
-
-    .nav__logo {
-        display: none;
-    }
-}
-
 .section {
     margin-top: 150px;
 }
@@ -114,33 +80,6 @@ body {
     width: 331px;
     height: 331px;
     border-radius: 100%;
-}
-
-@media (max-width: 640px) {
-    .section {
-        margin-top: 45px;
-    }
-
-    .section__title {
-        display: flex;
-        font-size: 35px;
-        line-height: 35px;
-        flex-direction: column-reverse;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .section__content {
-        width: 100%;
-        max-width: 249px;
-        height: 249px;
-    }
-
-    .section__img {
-        width: 236px;
-        max-width: 236px;
-        height: auto;
-    }
 }
 
 .skills__title {
@@ -185,41 +124,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-}
-
-@media (max-width: 640px) {
-    .skills__title {
-        margin-top: 140px;
-        font-size: 28px;
-    }
-
-    .skills__text {
-        margin-top: 29px;
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .skills__list {
-        margin-top: 60px;
-        grid-template-columns: repeat(3, 131px);
-        grid-template-rows: repeat(4, 131px);
-        justify-items: center;
-        align-items: center;
-        justify-content: space-evenly;
-        row-gap: 5px;
-    }
-
-    .skills__icon {
-        width: 100%;
-        max-width: 80px;
-        height: auto;
-    }
-
-    .icon {
-        width: 100%;
-        max-width: 80px;
-        height: auto;
-    }
 }
 
 .container__title {
@@ -309,35 +213,6 @@ body {
     margin-left: 60px;
 }
 
-@media (max-width: 640px) {
-    .container__title {
-        margin-top: 140px;
-        font-size: 28px;
-    }
-
-    .container__text {
-        margin-top: 29px;
-        font-size: 20px;
-    }
-
-    .container__list {
-        grid-template-columns: repeat(1, 567px);
-        grid-template-rows: repeat(3, 373px);
-        justify-items: center;
-        justify-content: space-evenly;
-        row-gap: 247px;
-    }
-
-    .container__item {
-        width: 373px;
-        height: 567px;
-        border-radius: 20px;
-        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
-        background: rgb(255, 255, 255);
-    }
-
-}
-
 .container__contacts {
     display: flex;
     flex-direction: row;
@@ -368,40 +243,6 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 640px) {
-    .container__contacts {
-        display: flex;
-        margin-top: 300px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container__contacts__list {
-        display: flex;
-        margin-top: 15px;
-        gap: 15px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container__link {
-        display: flex;
-        gap: 15px;
-        flex-direction: column;
-    }
-
-    .container__contacts__img {
-        display: flex;
-        margin-top: 18px;
-        gap: 30px;
-    }
-
-    .container__logo {
-        display: none;
-    }
-
-}
-
 .divider {
     display: flex;
     justify-content: center;
@@ -415,28 +256,9 @@ body {
     opacity: 0.3;
 }
 
-@media (max-width: 640px) {
-    .divider {
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-
-    .create__line {
-        width: 500px;
-    }
-}
-
 .list__link {
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-bottom: 40px;
-}
-
-@media (max-width: 640px) {
-    .list__link {
-        flex-direction: column;
-        align-items: center;
-        gap: 35px;
-    }
 }
