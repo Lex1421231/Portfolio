@@ -1,0 +1,812 @@
+*
+    box-sizing: border-box
+    scroll-behavior: smooth
+    /*border: 1px;*/
+    /*border-color: red*/
+    /*border-style: dashed*/
+
+body
+    background: rgb(255, 255, 255)
+    justify-content: center
+    min-width: 320px
+
+.nav__list
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    margin-top: 30px
+
+.nav__item
+    display: flex
+    align-items: center
+    gap: 51px
+
+.nav__link
+    display: flex
+    gap: 50px
+
+    &__text
+        color: rgb(102, 102, 102)
+        font-family: DM Sans
+        font-size: 20px
+        font-weight: 500
+        line-height: 26px
+        letter-spacing: 0px
+        text-align: center
+        text-decoration: none
+
+.section
+    margin-top: 150px
+
+    &__title
+        display: flex
+        align-items: center
+        justify-content: space-around
+        flex-direction: row
+        font-family: Poppins
+        text-align: left
+        color: rgb(66, 68, 110)
+        font-size: 58px
+        font-weight: 700
+        line-height: 70px
+
+    &__subtitle
+        color: transparent
+        background-clip: text
+        background-image: linear-gradient(to bottom right, rgb(231, 15, 170), rgb(0, 192, 253))
+
+    &__content
+        display: flex
+        width: 349px
+        height: 349px
+        border-radius: 100%
+        background: linear-gradient(to bottom right, rgb(231, 15, 170), rgb(0, 192, 253))
+        align-items: center
+        justify-content: center
+
+    &__img
+        display: flex
+        width: 331px
+        height: 331px
+        border-radius: 100%
+
+.skills__title
+    display: flex
+    margin-top: 256px
+    font-family: Poppins
+    font-size: 48px
+    font-weight: 700
+    color: rgb(66, 68, 110)
+    justify-content: center
+
+.skills__text
+    display: flex
+    margin-top: 49px
+    font-family: Poppins
+    font-size: 32px
+    font-weight: 400
+    color: rgb(102, 102, 102)
+    justify-content: center
+
+.skills__list
+    display: grid
+    margin-top: 120px
+    grid-template-columns: repeat(6, 131px)
+    grid-template-rows: repeat(2, 131px)
+    justify-items: center
+    align-items: center
+    justify-content: space-evenly
+    row-gap: 51px
+
+.skills__icon
+    border: 2px
+    border-color: rgba(25, 0, 255, 0.397)
+    border-style: dashed
+
+.icon
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+
+.container__title
+    margin-top: 142px
+    color: rgb(66, 68, 110)
+    font-family: Poppins
+    font-size: 48px
+    font-weight: 700
+    line-height: 26px
+    text-align: center
+
+.container__text
+    margin-top: 49px
+    color: rgb(102, 102, 102)
+    font-family: Poppins
+    font-size: 32px
+    font-weight: 400
+    line-height: 26px
+    text-align: center
+
+.container__list
+    display: grid
+    margin-top: 96px
+    grid-template-columns: repeat(3, 567px)
+    grid-template-rows: repeat(1, 373px)
+    justify-items: center
+    justify-content: space-evenly
+    row-gap: 47px
+
+.container__item
+    width: 373px
+    height: 567px
+    border-radius: 20px
+    box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+    background: rgb(255, 255, 255)
+
+    &__img
+        width: 373px
+        height: 260px
+        border-radius: 20px 20px 0px 0px
+
+    &__title
+        margin-top: 27px
+        color: rgb(0, 0, 0)
+        font-family: Poppins
+        font-size: 28px
+        font-weight: 500
+        line-height: 26px
+        text-align: center
+
+    &__text
+        margin-top: 17px
+        margin-left: 18px
+        color: rgb(102, 102, 102)
+        font-family: Poppins
+        font-size: 18px
+        font-weight: 300
+        line-height: 26px
+        text-align: left
+
+    &__subtitle
+        margin-top: 12px
+        margin-left: 18px
+        font-family: Poppins
+        font-size: 14px
+        font-weight: 300
+        line-height: 26px
+        text-align: left
+
+.item_grope
+    position: relative
+    top: 21px
+    margin-left: 18px
+
+.item_git
+    position: relative
+    top: 21px
+    margin-left: 60px
+
+.container__contacts
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-around
+    margin-top: 300px
+
+    &__list
+        display: flex
+        gap: 50px
+
+.container__link
+    display: flex
+    align-items: center
+    gap: 51px
+
+.container__contacts__item
+    color: rgb(102, 102, 102)
+    font-family: DM Sans
+    font-size: 20px
+    font-weight: 500
+    line-height: 26px
+    letter-spacing: 0px
+    text-align: center
+    text-decoration: none
+
+.divider
+    display: flex
+    justify-content: center
+    margin-top: 42px
+    margin-bottom: 60px
+
+.create__line
+    width: 1209px
+    border: 2px solid rgb(102, 102, 102)
+    opacity: 0.3
+
+.list__link
+    display: flex
+    justify-content: center
+    gap: 25px
+    margin-bottom: 40px
+
+.menu
+    display: none
+    background-color: white
+    border: 0px
+    margin-top: 20px
+    height: 80px
+    width: 80px
+
+.header__menu
+    display: flex
+    justify-content: center
+
+.menu_content
+    display: none
+    margin-top: 22px
+    position: absolute
+    z-index: 1
+    color: rgb(36, 35, 35)
+    font-family: DM Sans
+    font-size: 55px
+    font-weight: 500
+    line-height: 75px
+    list-style-type: none
+    align-items: center
+    background: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(255, 255, 255))
+    text-align: center
+    border-radius: 10px
+    margin-left: -280px
+    height: 1050px
+    width: 600px
+
+.menu .ul
+    margin: 0
+    list-style: none
+    padding-left: 20px
+    display: none
+
+.menu .title
+    font-size: 18px
+    cursor: pointer
+
+    &::before
+        content: url('../icon/menu/UiwMenu.svg')
+
+.menu.open .title::before
+    content: url('../icon/menu/UiwClose.svg')
+
+.menu.open ul
+    display: block
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 1536px)
+    .nav__list
+        flex-direction: row
+        gap: 10px
+
+    .nav__item
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        flex-direction: column
+
+    .nav__link
+        display: flex
+        gap: 35px
+
+    &__text
+        font-size: 40px
+
+    .nav__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .nav__logo
+        display: none
+
+    .container__contacts
+        margin-top: 500px
+
+    .container__list
+        grid-template-columns: repeat(2, 567px)
+        grid-template-rows: repeat(3, 373px)
+        justify-items: center
+        justify-content: space-evenly
+        row-gap: 247px
+
+    .container__item
+        width: 373px
+        height: 567px
+        border-radius: 20px
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+        background: rgb(255, 255, 255)
+
+    &__img
+        width: 373px
+        height: 260px
+
+    .skills__title
+
+        margin-top: 130px
+
+    .container__contacts
+        margin-top: -200px
+
+    .create__line
+        width: 1000px
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 1280px)
+    .nav__list
+        flex-direction: row
+        gap: 10px
+
+    .nav__item
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        flex-direction: column
+
+    .nav__link
+        display: flex
+        gap: 35px
+
+    &__text
+        font-size: 40px
+
+    .nav__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .nav__logo
+        display: none
+
+    .container__contacts
+        margin-top: 500px
+
+    .container__list
+        grid-template-columns: repeat(2, 567px)
+        grid-template-rows: repeat(3, 373px)
+        justify-items: center
+        justify-content: space-evenly
+        row-gap: 247px
+
+    .container__item
+        width: 373px
+        height: 567px
+        border-radius: 20px
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+        background: rgb(255, 255, 255)
+
+    &__img
+        width: 373px
+        height: 260px
+
+    .skills__title
+
+        margin-top: 130px
+
+    .container__contacts
+        margin-top: -200px
+
+    .create__line
+        width: 900px
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 1024px)
+    .nav__list
+        flex-direction: row
+        gap: 10px
+
+    .nav__item
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        flex-direction: column
+
+    .nav__link
+        display: flex
+        gap: 35px
+
+    &__text
+        font-size: 30px
+
+    .nav__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .nav__logo
+        display: none
+
+    .section__title
+        font-size: 48px
+        font-weight: 700
+        line-height: 50px
+
+    .section__content
+        width: 100%
+        max-width: 249px
+        height: 249px
+
+    .section__img
+        width: 236px
+        max-width: 236px
+        height: auto
+
+    .skills__title
+
+        margin-top: 130px
+
+    .container__contacts
+        margin-top: 300px
+
+    .container__title
+        margin-top: 140px
+        font-size: 28px
+
+    .container__text
+        margin-top: 29px
+        font-size: 20px
+
+    .container__list
+        grid-template-columns: repeat(1, 567px)
+        grid-template-rows: repeat(3, 373px)
+        justify-items: center
+        justify-content: space-evenly
+        row-gap: 247px
+
+    .container__item
+        width: 373px
+        height: 567px
+        border-radius: 20px
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+        background: rgb(255, 255, 255)
+
+    &__img
+        width: 373px
+        height: 260px
+
+    .create__line
+        width: 800px
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 768px)
+    .nav__list
+        flex-direction: column
+        gap: 10px
+
+    .nav__item
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        flex-direction: column
+
+    .nav__link
+        display: none
+        gap: 35px
+        flex-direction: column
+
+    &__text
+        font-size: 40px
+
+    .nav__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .nav__logo
+        display: none
+
+    .section
+        margin-top: 45px
+
+    &__title
+        display: flex
+        font-size: 35px
+        line-height: 35px
+        flex-direction: column-reverse
+        gap: 20px
+        text-align: center
+
+    &__content
+        width: 100%
+        max-width: 249px
+        height: 249px
+
+    &__img
+        width: 236px
+        max-width: 236px
+        height: auto
+
+    .skills__title
+        margin-top: 140px
+        font-size: 28px
+
+    .skills__text
+        margin-top: 29px
+        font-size: 20px
+        text-align: center
+
+    .skills__list
+        margin-top: 60px
+        grid-template-columns: repeat(3, 131px)
+        grid-template-rows: repeat(4, 131px)
+        justify-items: center
+        align-items: center
+        justify-content: space-evenly
+        row-gap: 5px
+
+    .skills__icon
+        width: 100%
+        max-width: 80px
+        height: auto
+
+    .icon
+        width: 100%
+        max-width: 80px
+        height: auto
+
+    .container__title
+        margin-top: 140px
+        font-size: 28px
+
+    .container__text
+        margin-top: 29px
+        font-size: 20px
+
+    .container__contacts
+        display: flex
+        margin-top: 300px
+        flex-direction: column
+        align-items: center
+
+    &__list
+        display: flex
+        margin-top: 15px
+        gap: 15px
+        flex-direction: column
+        align-items: center
+
+    .container__link
+        display: flex
+        gap: 15px
+        flex-direction: column
+
+    .container__contacts__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .container__logo
+        display: none
+
+    .divider
+        margin-top: 30px
+        margin-bottom: 40px
+
+    .create__line
+        width: 500px
+
+    .list__link
+        flex-direction: column
+        align-items: center
+        gap: 35px
+
+    &
+        display: none
+        flex-direction: column
+        align-items: center
+        gap: 35px
+
+    .container__list
+        grid-template-columns: repeat(1, 567px)
+        grid-template-rows: repeat(3, 373px)
+        justify-items: center
+        justify-content: space-evenly
+        row-gap: 247px
+
+    .container__item
+        width: 373px
+        height: 567px
+        border-radius: 20px
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+        background: rgb(255, 255, 255)
+
+    &__img
+        width: 373px
+        height: 260px
+
+    .menu
+        display: inline-block
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 640px)
+    .nav__list
+        flex-direction: column
+        gap: 10px
+
+    .nav__item
+        display: flex
+        gap: 15px
+        flex-wrap: wrap
+        flex-direction: column
+
+    .nav__link
+        display: none
+        gap: 35px
+        flex-direction: column
+
+    &__text
+        font-size: 40px
+
+    .nav__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .nav__logo
+        display: none
+
+    .section
+        margin-top: 45px
+
+    &__title
+        display: flex
+        font-size: 35px
+        line-height: 35px
+        flex-direction: column-reverse
+        gap: 20px
+        text-align: center
+
+    &__content
+        width: 100%
+        max-width: 249px
+        height: 249px
+
+    &__img
+        width: 236px
+        max-width: 236px
+        height: auto
+
+    .skills__title
+        margin-top: 140px
+        font-size: 28px
+
+    .skills__text
+        margin-top: 29px
+        font-size: 20px
+        text-align: center
+
+    .skills__list
+        margin-top: 60px
+        grid-template-columns: repeat(3, 131px)
+        grid-template-rows: repeat(4, 131px)
+        justify-items: center
+        align-items: center
+        justify-content: space-evenly
+        row-gap: 5px
+
+    .skills__icon
+        width: 100%
+        max-width: 80px
+        height: auto
+
+    .icon
+        width: 100%
+        max-width: 80px
+        height: auto
+
+    .container__title
+        margin-top: 140px
+        font-size: 28px
+
+    .container__text
+        margin-top: 29px
+        font-size: 20px
+
+    .container__contacts
+        display: flex
+        margin-top: 300px
+        flex-direction: column
+        align-items: center
+
+    &__list
+        display: flex
+        margin-top: 15px
+        gap: 15px
+        flex-direction: column
+        align-items: center
+
+    .container__link
+        display: flex
+        gap: 15px
+        flex-direction: column
+
+    .container__contacts__img
+        display: flex
+        margin-top: 18px
+        gap: 30px
+
+    .container__logo
+        display: none
+
+    .divider
+        margin-top: 30px
+        margin-bottom: 40px
+
+    .create__line
+        width: 400px
+
+    .list__link
+        display: none
+        flex-direction: column
+        align-items: center
+        gap: 35px
+
+    .container__item__img
+        width: 173px
+        height: 160px
+
+    .container__list
+        grid-template-columns: repeat(1, 567px)
+        grid-template-rows: repeat(3, 373px)
+        justify-items: center
+        justify-content: space-evenly
+        row-gap: 247px
+
+    .container__item
+        width: 373px
+        height: 567px
+        border-radius: 20px
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+        background: rgb(255, 255, 255)
+
+    &__img
+        width: 373px
+        height: 260px
+
+    .menu
+        display: inline-block
+
+@media (max-width: 420px)
+    .container__item__img
+        width: 173px
+        height: 160px
+
+    .container__list
+        grid-template-columns: repeat(1, 567px)
+        grid-template-rows: repeat(3, 373px)
+        justify-items: center
+        justify-content: space-evenly
+        row-gap: 247px
+        margin-left: -70px
+
+    .container__item
+        width: 273px
+        height: 567px
+        border-radius: 20px
+        box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2)
+        background: rgb(255, 255, 255)
+
+    &__img
+        width: 273px
+        height: 160px
+
+    .menu
+        display: inline-block
+
+    .item_grope
+        font-size: 14px
+
+    .item_git
+        font-size: 14px
