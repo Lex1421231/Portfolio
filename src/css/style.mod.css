@@ -257,7 +257,7 @@
     }
 
     .nav__link {
-        display: flex;
+        display: none;
         gap: 35px;
         flex-direction: column;
     }
@@ -416,6 +416,10 @@
         width: 373px;
         height: 260px;
     }
+
+    .menu {
+        display: inline-block;
+    }
 }
 
 /*----------------------------------------------------------*/
@@ -434,7 +438,7 @@
     }
 
     .nav__link {
-        display: flex;
+        display: none;
         gap: 35px;
         flex-direction: column;
     }
@@ -593,4 +597,7 @@
         height: 260px;
     }
 
+    .menu {
+        display: inline-block;
+    }
 }

@@ -24,6 +24,26 @@
     <header class="nav">
         <nav class="nav__list">
             <img src="src/icon/logo1.svg" alt="logo1" class="nav__logo">
+            <section class="header__menu">
+                <button id="sweeties" class="menu">
+                    <span class="title"></span>
+                    <ul class="menu_content">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Tech Stack</li>
+                        <li>Projects</li>
+                        <li>Contact</li>
+                    </ul>
+                </button>
+                <script>
+                    let menuElem = document.getElementById('sweeties');
+                    let titleElem = menuElem.querySelector('.title');
+
+                    titleElem.onclick = function () {
+                        menuElem.classList.toggle('open');
+                    }
+                </script>
+            </section>
             <div class="nav__item">
                 <div class="nav__link">
                     <a class="nav__link__text" href="#">Home</a>
@@ -40,26 +60,6 @@
             </div>
         </nav>
     </header>
-    <section class="header__menu">
-        <div id="sweeties" class="menu">
-            <span class="title"></span>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Tech Stack</li>
-                <li>Projects</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-        <script>
-            let menuElem = document.getElementById('sweeties');
-            let titleElem = menuElem.querySelector('.title');
-
-            titleElem.onclick = function () {
-                menuElem.classList.toggle('open');
-            }
-        </script>
-    </section>
     <section class="section">
         <div class="section__title">
             <div>Hi 👋,<br>
