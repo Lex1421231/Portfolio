@@ -52,7 +52,7 @@
         background: rgb(255, 255, 255);
     }
 
-    .item_img {
+    .container__item__img {
         width: 373px;
         height: 260px;
     }
@@ -125,7 +125,7 @@
         background: rgb(255, 255, 255);
     }
 
-    .item_img {
+    .container__item__img {
         width: 373px;
         height: 260px;
     }
@@ -231,7 +231,7 @@
         background: rgb(255, 255, 255);
     }
 
-    .item_img {
+    .container__item__img {
         width: 373px;
         height: 260px;
     }
@@ -412,7 +412,7 @@
         background: rgb(255, 255, 255);
     }
 
-    .item_img {
+    .container__item__img {
         width: 373px;
         height: 260px;
     }
@@ -567,7 +567,7 @@
         gap: 35px;
     }
 
-    .item_img {
+    .container__item__img {
         width: 173px;
         height: 160px;
     }
@@ -588,7 +588,7 @@
         background: rgb(255, 255, 255);
     }
 
-    .item_img {
+    .container__item__img {
         width: 373px;
         height: 260px;
     }
