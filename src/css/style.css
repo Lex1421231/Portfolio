@@ -26,9 +26,10 @@ body.dark-theme {
   color: #ffffff; }
 
 #themeToggle {
+  cursor: pointer;
   border: 0px;
   background-color: #ffffff00;
-  margin-left: 8px; }
+  /*margin-left: 8px;*/ }
 
 .nav__list {
   display: -webkit-box;
@@ -70,6 +71,32 @@ body.dark-theme {
   letter-spacing: 0;
   text-align: center;
   text-decoration: none; }
+
+.nav__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px; }
+
+.container__contacts__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px; }
 
 .section {
   margin-top: 150px; }
@@ -163,11 +190,6 @@ body.dark-theme {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   row-gap: 51px; }
-
-.skills__icon {
-  border: 2px;
-  border-color: rgba(25, 0, 255, 0.397);
-  border-style: dashed; }
 
 .icon {
   display: -webkit-box;
@@ -1071,6 +1093,12 @@ body.dark-theme {
     font-size: 14px; }
 
   .item_git {
-    font-size: 14px; } }
+    font-size: 14px; }
 
+  .nav__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 18px;
+    gap: 15px; } }
 /*# sourceMappingURL=style.css.map */
