@@ -31,6 +31,10 @@ body.dark-theme {
   background-color: #ffffff00;
   /*margin-left: 8px;*/ }
 
+.nav__logo {
+  max-width: 200px;
+  margin-left: 80px; }
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
