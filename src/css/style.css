@@ -18,12 +18,12 @@ body {
   transition: background-color 1.2s ease; }
 
 body.light-theme {
-  background-color: #ffffff;
-  color: #000000; }
-
-body.dark-theme {
   background-color: #1d1b1b;
   color: #ffffff; }
+
+body.dark-theme {
+  background-color: #ffffff;
+  color: #000000; }
 
 #themeToggle {
   cursor: pointer;
@@ -1161,5 +1161,4 @@ body.dark-theme {
 
   .container__list {
     margin-left: -100px; } }
-
 /*# sourceMappingURL=style.css.map */
