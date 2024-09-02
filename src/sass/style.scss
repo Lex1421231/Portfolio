@@ -27,7 +27,7 @@ body.dark-theme {
 }
 
 body.light-theme .menu-list {
-    background: rgba(102, 102, 102, 0.664);
+    background: rgba(102, 102, 102, 0.829);
 }
 
 body.light-theme .menu-item {
@@ -57,7 +57,7 @@ body.light-theme .menu-item {
     background: transparent;
     width: 39px;
     height: 25px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .burger::before,
@@ -100,7 +100,7 @@ body.light-theme .menu-item {
     top: 0;
     left: 0;
     position: absolute;
-    display: grid;
+    display: flex;
     gap: 12px;
     padding: 42px 0;
     margin: 0;
@@ -109,7 +109,8 @@ body.light-theme .menu-item {
     transform: translateX(-100%);
     transition: .3s;
     width: 300px;
-    height: 500px;
+    height: 1400px;
+    flex-direction: column;
 }
 
 .menu-item {
@@ -403,6 +404,7 @@ body.light-theme .menu-item {
 .header__menu {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 @media (max-width:1536px) {
