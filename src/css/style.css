@@ -26,7 +26,7 @@ body.dark-theme {
   color: #000000; }
 
 body.light-theme .menu-list {
-  background: rgba(102, 102, 102, 0.164); }
+  background: rgba(102, 102, 102, 0.438); }
 
 #themeToggle {
   cursor: pointer;
