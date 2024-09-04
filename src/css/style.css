@@ -449,9 +449,10 @@ body.light-theme .menu-item {
   width: auto;
   margin-top: -10px;
   padding: 16px;
-  color: white;
+  color: rgba(182, 8, 8, 0.822);
   font-weight: bold;
-  font-size: 29px;
+  font-size: 30px;
+  text-shadow: white 1px 0 3px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -1158,5 +1159,4 @@ body.light-theme .menu-item {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     row-gap: 1px; } }
-
 /*# sourceMappingURL=style.css.map */
