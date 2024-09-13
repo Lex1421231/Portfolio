@@ -480,6 +480,30 @@ body.light-theme .menu-item {
   top: 21px;
   margin-left: 60px; }
 
+.container__tools {
+  margin-top: 400px; }
+
+.container__tools__item {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 470px);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.tools_img {
+  display: block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 450px;
+  max-width: 470px;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2); }
+
 .container__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -717,6 +741,18 @@ body.light-theme .menu-item {
   .skills__title {
     margin-top: 130px; }
 
+  .container__tools__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
   .container__contacts {
     margin-top: -200px; }
 
@@ -840,6 +876,9 @@ body.light-theme .menu-item {
   .next {
     margin: -50px;
     margin-top: 10px; }
+
+  .container__tools {
+    margin-top: 150px; }
 
   .container__contacts {
     display: -webkit-box;
@@ -1021,6 +1060,10 @@ body.light-theme .menu-item {
     max-width: 80px;
     height: auto; }
 
+  .tools_img {
+    max-height: 400px;
+    max-width: 420px; }
+
   .container__title {
     margin-top: 140px;
     font-size: 28px; }
@@ -1139,6 +1182,10 @@ body.light-theme .menu-item {
     margin: -50px;
     margin-top: -20px; }
 
+  .tools_img {
+    max-height: 300px;
+    max-width: 320px; }
+
   .skills__title {
     text-align: center; } }
 @media (max-width: 380px) {
@@ -1167,6 +1214,10 @@ body.light-theme .menu-item {
     margin-top: 18px;
     gap: 15px; }
 
+  .tools_img {
+    max-height: 280px;
+    max-width: 300px; }
+
   .icon {
     width: 100%;
     max-width: 60px;
@@ -1188,6 +1239,10 @@ body.light-theme .menu-item {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    row-gap: 1px; } }
+    row-gap: 1px; }
+
+  .tools_img {
+    max-height: 250px;
+    max-width: 280px; } }
 
 /*# sourceMappingURL=style.css.map */
