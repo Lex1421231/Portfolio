@@ -434,8 +434,7 @@ body.light-theme .menu-item {
   height: 700px; }
 
 .carousel_img {
-  width: 100vw;
-  border-radius: 10px; }
+  width: 100vw; }
 
 .carousel-container {
   display: -webkit-box;
