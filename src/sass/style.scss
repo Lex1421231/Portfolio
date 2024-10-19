@@ -361,23 +361,25 @@ body.light-theme .menu-item {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform all 6s;
+
 }
 
 .carousel {
     position: relative;
     margin: 0 auto;
     width: 100vw;
-   // height: 100vh;
+    // height: 100vh;
     position: relative;
     overflow: hidden;
     align-items: center;
     margin-top: 0px;
+    height: 700px;
+
 }
 
 .carousel_img {
     width: 100vw;
-  //  height: 100vh;
+    //  height: 100vh;
     border-radius: 10px;
     //box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, .2);
 }
@@ -388,14 +390,16 @@ body.light-theme .menu-item {
     align-items: center;
     padding: 0 auto;
     width: 100vw;
-   // height: 100vh;
+    // height: 100vh;
     margin: 0 auto;
+
 }
 
 .carousel-container img {
     width: 100%;
     object-fit: contain;
     object-position: center;
+    transition: opacity 1s ease;
 }
 
 
@@ -835,11 +839,9 @@ body.light-theme .menu-item {
         display: inline-block
     }
 
-    /*.carousel {
-        width: 80%;
-        height: 100%;
-        padding: auto;
-    }*/
+    .carousel {
+        height: 600px;
+    }
 }
 
 @media (max-width:640px) {
@@ -948,11 +950,9 @@ body.light-theme .menu-item {
         font-size: 20px
     }
 
-    /* .carousel {
-        width: 80%;
-        height: 100%;
-        padding: auto;
-    }*/
+    .carousel {
+        height: 500px;
+    }
 
 
     .container__contacts {
@@ -1031,11 +1031,9 @@ body.light-theme .menu-item {
         gap: 15px
     }
 
-    /*.carousel {
-        width: 70%;
-        height: 100%;
-        padding: auto;
-    }*/
+    .carousel {
+        height: 400px;
+    }
 
     .tools_img {
         max-height: 300px;
@@ -1108,6 +1106,10 @@ body.light-theme .menu-item {
     .tools_img {
         max-height: 250px;
         max-width: 280px;
+    }
+
+    .carousel {
+        height: 300px;
     }
 
 }

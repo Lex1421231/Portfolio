@@ -8,11 +8,13 @@ document.getElementById('themeToggle').addEventListener('click', function () {
 });
 
 let slideIndex = 1;
+const slideChangeTime = 5000;
+const transitionDuration = 2000;
 showSlides(slideIndex);
 
 setInterval(() => {
     plusSlides(1);
-}, 4000);
+}, 5000);
 
 function plusSlides(n) {
     showSlides((slideIndex += n));
