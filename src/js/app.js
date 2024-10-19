@@ -10,6 +10,10 @@ document.getElementById('themeToggle').addEventListener('click', function () {
 let slideIndex = 1;
 showSlides(slideIndex);
 
+setInterval(() => {
+    plusSlides(1);
+}, 4000);
+
 function plusSlides(n) {
     showSlides((slideIndex += n));
 }
@@ -28,3 +32,4 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
+
