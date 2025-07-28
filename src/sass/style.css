@@ -79,14 +79,14 @@ body.light-theme .menu-item {
   transition: bottom 0.3s 0.15s, transform 0.3s;
 }
 
-.burger-checkbox:checked + .burger::before {
+.burger-checkbox:checked+.burger::before {
   top: 11px;
   transform: rotate(45deg);
   box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
 }
 
-.burger-checkbox:checked + .burger::after {
+.burger-checkbox:checked+.burger::after {
   bottom: 11px;
   transform: rotate(-45deg);
   transition: bottom 0.3s, transform 0.3s 0.15s;
@@ -124,7 +124,7 @@ body.light-theme .menu-item {
   background: rgba(255, 255, 255, 0.2);
 }
 
-.burger-checkbox:checked ~ .menu-list {
+.burger-checkbox:checked~.menu-list {
   transform: translateX(0);
 }
 
@@ -198,7 +198,7 @@ body.light-theme .menu-item {
 .section__subtitle {
   color: transparent;
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
   background-image: linear-gradient(to bottom right, #e70faa, #00c0fd);
 }
 
@@ -316,13 +316,16 @@ body.light-theme .menu-item {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }
 }
+
 .icon {
   display: flex;
   flex-wrap: wrap;
@@ -359,18 +362,17 @@ body.light-theme .menu-item {
 }
 
 .Grid_box {
-  height: 600px;
+  min-height: 600px;
 }
 
 .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-auto-rows: 200px;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper_img {
   padding: 50px;
-  height: 500px;
+  max-height: 500px;
   border-radius: 60px;
 }
 
@@ -472,176 +474,224 @@ body.light-theme .menu-item {
     flex-direction: row;
     gap: 10px;
   }
+
   .nav__item {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .nav__link {
     display: flex;
     gap: 35px;
   }
+
   .nav__link__text {
     font-size: 40px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .nav__logo {
     display: none;
   }
+
   .container__contacts {
     margin-top: 250px;
   }
+
   .container__contacts__list {
     margin-top: 270px;
   }
+
   .skills__title {
     margin-top: 130px;
   }
+
   .container__contacts {
     margin-top: -200px;
   }
+
   .create__line {
     width: 1000px;
   }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
+
 @media (max-width: 1280px) {
   .nav__list {
     flex-direction: row;
     gap: 10px;
   }
+
   .nav__item {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .nav__link {
     display: flex;
     gap: 35px;
   }
+
   .nav__link__text {
     font-size: 40px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .nav__logo {
     display: none;
   }
+
   .container__contacts {
     margin-top: 500px;
   }
+
   .skills__title {
     margin-top: 130px;
   }
+
   .container__contacts {
     margin-top: -200px;
   }
+
   .create__line {
     width: 900px;
   }
 }
+
 @media (max-width: 1024px) {
   .nav__list {
     flex-direction: row;
     gap: 10px;
   }
+
   .nav__item {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .nav__link {
     display: flex;
     gap: 35px;
   }
+
   .nav__link__text {
     font-size: 30px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .nav__logo {
     display: none;
   }
+
   .section__title {
     font-size: 48px;
     font-weight: 700;
     line-height: 50px;
   }
+
   .section__content {
     width: 100%;
     max-width: 249px;
     height: 249px;
   }
+
   .section__img {
     width: 236px;
     max-width: 236px;
     height: auto;
   }
+
   .skills__title {
     margin-top: 130px;
   }
+
   .container__tools__item {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+
   .container__contacts {
     margin-top: -200px;
   }
+
   .container__title {
     margin-top: 140px;
     font-size: 28px;
   }
+
   .container__text {
     margin-top: 29px;
     font-size: 20px;
   }
+
   .create__line {
     width: 800px;
   }
 }
+
 @media (max-width: 768px) {
   .nav__list {
     gap: 10px;
     justify-content: space-between;
   }
+
   .nav__item {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .nav__link {
     display: none;
     gap: 35px;
     flex-direction: column;
   }
+
   .nav__link__text {
     font-size: 40px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .nav__logo {
     display: none;
   }
+
   .section {
     margin-top: 45px;
   }
+
   .section__title {
     display: flex;
     font-size: 35px;
@@ -650,25 +700,30 @@ body.light-theme .menu-item {
     gap: 20px;
     text-align: center;
   }
+
   .section__content {
     width: 100%;
     max-width: 249px;
     height: 249px;
   }
+
   .section__img {
     width: 236px;
     max-width: 236px;
     height: auto;
   }
+
   .skills__title {
     margin-top: 140px;
     font-size: 28px;
   }
+
   .skills__text {
     margin-top: 29px;
     font-size: 20px;
     text-align: center;
   }
+
   .skills__list {
     margin-top: 60px;
     grid-template-columns: repeat(3, 131px);
@@ -678,33 +733,40 @@ body.light-theme .menu-item {
     justify-content: space-evenly;
     row-gap: 5px;
   }
+
   .skills__icon {
     width: 100%;
     max-width: 80px;
     height: auto;
   }
+
   .icon {
     width: 100%;
     max-width: 80px;
     height: auto;
   }
+
   .container__title {
     margin-top: 140px;
     font-size: 28px;
   }
+
   .container__text {
     margin-top: 29px;
     font-size: 20px;
   }
+
   .container__tools {
     margin-top: 150px;
   }
+
   .container__contacts {
     display: flex;
     margin-top: 50px;
     flex-direction: column;
     align-items: center;
   }
+
   .container__contacts__list {
     display: flex;
     margin-top: 15px;
@@ -712,74 +774,91 @@ body.light-theme .menu-item {
     flex-direction: column;
     align-items: center;
   }
+
   .container__link {
     display: flex;
     gap: 15px;
     flex-direction: column;
   }
+
   .container__contacts__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .container__logo {
     display: none;
   }
+
   .divider {
     margin-top: 30px;
     margin-bottom: 40px;
   }
+
   .create__line {
     width: 500px;
   }
+
   .list__link {
     flex-direction: column;
     align-items: center;
     gap: 35px;
   }
+
   .list__link {
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 35px;
   }
+
   .menu {
     display: inline-block;
   }
+
   .carousel {
     height: 600px;
   }
 }
+
 @media (max-width: 640px) {
   .nav__list {
     gap: 10px;
     justify-content: space-between;
   }
+
   .nav__item {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .nav__link {
     display: none;
     gap: 35px;
     flex-direction: column;
   }
+
   .nav__link__text {
     font-size: 40px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .nav__logo {
     display: none;
   }
+
   .section {
     margin-top: 45px;
   }
+
   .section__title {
     display: flex;
     font-size: 35px;
@@ -788,25 +867,30 @@ body.light-theme .menu-item {
     gap: 20px;
     text-align: center;
   }
+
   .section__content {
     width: 100%;
     max-width: 249px;
     height: 249px;
   }
+
   .section__img {
     width: 236px;
     max-width: 236px;
     height: auto;
   }
+
   .skills__title {
     margin-top: 140px;
     font-size: 28px;
   }
+
   .skills__text {
     margin-top: 29px;
     font-size: 20px;
     text-align: center;
   }
+
   .skills__list {
     margin-top: 60px;
     grid-template-columns: repeat(3, 131px);
@@ -816,34 +900,41 @@ body.light-theme .menu-item {
     justify-content: space-evenly;
     row-gap: 5px;
   }
+
   .skills__icon {
     width: 100%;
     max-width: 80px;
     height: auto;
   }
+
   .icon {
     width: 100%;
     max-width: 80px;
     height: auto;
   }
+
   .tools_img {
     max-height: 400px;
     max-width: 420px;
   }
+
   .container__title {
     margin-top: 140px;
     font-size: 28px;
   }
+
   .container__text {
     margin-top: 29px;
     font-size: 20px;
   }
+
   .container__contacts {
     display: flex;
     margin-top: 2px;
     flex-direction: column;
     align-items: center;
   }
+
   .container__contacts__list {
     display: flex;
     margin-top: 15px;
@@ -851,101 +942,129 @@ body.light-theme .menu-item {
     flex-direction: column;
     align-items: center;
   }
+
   .container__link {
     display: flex;
     gap: 15px;
     flex-direction: column;
   }
+
   .container__contacts__img {
     display: flex;
     margin-top: 18px;
     gap: 30px;
   }
+
   .container__logo {
     display: none;
   }
+
   .divider {
     margin-top: 30px;
     margin-bottom: 40px;
   }
+
   .create__line {
     width: 400px;
   }
+
   .list__link {
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 35px;
   }
+
   .menu {
     display: inline-block;
   }
 }
+
 @media (max-width: 480px) {
   .nav__list {
     gap: 10px;
     justify-content: space-between;
   }
+
   .menu {
     display: inline-block;
   }
+
   .item_grope {
     font-size: 14px;
   }
+
   .item_git {
     font-size: 14px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 15px;
   }
+
   .tools_img {
     max-height: 300px;
     max-width: 320px;
   }
+
   .skills__title {
     text-align: center;
   }
+
+  .wrapper_img {
+    max-height: 300px;
+  }
 }
+
 @media (max-width: 380px) {
   .nav__list {
     gap: 10px;
     justify-content: space-between;
   }
+
   .skills__title {
     text-align: center;
   }
+
   .menu {
     display: inline-block;
   }
+
   .item_grope {
     font-size: 14px;
   }
+
   .item_git {
     font-size: 14px;
   }
+
   .nav__img {
     display: flex;
     margin-top: 18px;
     gap: 15px;
   }
+
   .tools_img {
     max-height: 280px;
     max-width: 300px;
   }
+
   .icon {
     width: 100%;
     max-width: 60px;
     height: auto;
   }
 }
+
 @media (max-width: 320px) {
   .skills__icon {
     width: 80%;
     max-width: 60px;
     height: auto;
   }
+
   .skills__list {
     margin-top: 60px;
     grid-template-columns: repeat(2, 131px);
@@ -955,8 +1074,11 @@ body.light-theme .menu-item {
     justify-content: space-evenly;
     row-gap: 1px;
   }
+
   .tools_img {
     max-height: 250px;
     max-width: 280px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
